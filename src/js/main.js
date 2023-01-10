@@ -1,10 +1,11 @@
 $(function () {
-  $('.header__slider').slick({
+  $('.top-slider__inner').slick({
     infinite: true,
+    dots: true,
     fade: true,
     prevArrow: '<img class="slider-arrows slider-arrow--left" src="img/arrow-left.svg" alt="">',
-    nextArrow: '<img class="slider-arrows slider-arrow--right" src="img/arrow-right.svg" alt="">',
-    asNavFor: '.slider-dots'
+    nextArrow: '<img class="slider-arrows slider-arrow--right" src="img/arrow-right.svg" alt="">'
+
 
   });
   $('.product__slider').slick({
