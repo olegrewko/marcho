@@ -92,6 +92,8 @@ const scripts = () => {
         './src/js/components/**.js',
         './node_modules/jquery/dist/jquery.js',
         './node_modules/slick-carousel/slick/slick.js',
+        './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+        './node_modules/rateyo/src/jquery.rateyo.js',
         //  './node_modules/animate.css/source/animate.css',
 
         './src/js/main.js'

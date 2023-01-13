@@ -24,6 +24,12 @@ $(function () {
     asNavFor: '.header__slider'
 
   });
-  $('.anim').addClass('animated fadeInDown infinite slow');
+  $(".star").rateYo({
+    rating: 3.6,
+    starWidth: '17px',
+    normalFill: '#ccccee',
+    ratedFill: '#ffc35b',
+    readOnly: true
+  });
 
 });
