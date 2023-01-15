@@ -780,6 +780,116 @@ text-transform: uppercase;
 
 }
 }
+.top {
+
+
+  &__container {
+  max-width: 1700px;
+  height: 333px;
+  margin: 0 auto;
+  	// background-image: url('../img/Image_Bg.jpg');
+     background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 120px 0 120px;
+    text-align: center;
+  }
+}
+.bredcrumbs {
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 25px;
+    position:relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../img/home_icon.svg');
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 2px;
+    }
+
+    &__list {
+     display: flex;
+    justify-content: center;
+
+    }
+    &__item {
+     color: #727272;
+     padding-right: 40px;
+     position:relative;
+     &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../img/angle_right.svg');
+      background-repeat: no-repeat;
+      width: 9px;
+      height: 10px;
+      // left: 50px;
+      right: 15px;
+      top: 6px;
+     }
+     &:last-child{
+      color: $accent-color;
+      padding-right: 0;
+      &::after {
+        display: none;
+      }
+     }
+    }
+    &__link {
+    color: inherit;
+    }
+  }
+  .modal {
+    padding-top: 100px;
+    max-width: 570px;
+    margin: 0 auto 115px;
+    width: 100%;
+    &__links{
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    &__link{
+     color: #909090;
+     font-size: 22px;
+     margin: 0 30px;
+
+    }
+    &__link--active{
+     color: $accent-color;
+    }
+    &__label{
+      display: block;
+      margin-bottom: 30px;
+    }
+    &__input{
+      display: block;
+      width: 100%;
+      border: none;
+      margin-top: 4px;
+      height: 60px;
+      padding: 0 15px;
+      background-color: $bg;
+    }
+    &__btn{
+      display: block;
+      background-color: $title;
+      color: #fff;
+      @extend %roboto-400;
+      padding: 16px 0 12px;
+      display: block;
+      width: 100%;
+      border: none;
+    }
+    &__error{
+      display: block;
+      margin-top: 10px;
+      color: $accent-color;
+    }
+  }
+
 
 
 
