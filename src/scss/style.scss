@@ -916,16 +916,24 @@ text-transform: uppercase;
 		// .filter__item
 
 		&__item {
+    padding: 30px 30px 40px;
+    border: 1px solid #ececec;
 		}
 
 		// .filter__title
 
 		&__title {
+      text-transform: uppercase;
+      color: $title;
+      font-size: 22px;
+      @extend %roboto-400;
 		}
 }
 .filter-search {
 
-		// .filter-search__title
+		// padding: 30px 30px 40px;
+    // border: 1px solid #ececec;
+
 
 		&__title {
 		}
@@ -938,11 +946,23 @@ text-transform: uppercase;
 		// .filter-search__input
 
 		&__input {
+      border: none;
+      background-color: $bg;
+      height: 50px;
+      width: 260px;
+      padding: 0 5px 0 15px;
 		}
 
 		// .filter-search__btn
 
 		&__btn {
+      border: none;
+      background-color: $accent-color;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 		}
 }
 
