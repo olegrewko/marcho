@@ -64,17 +64,7 @@ const styles = () => {
     .pipe(dest('./app/css/'))
     .pipe(browserSync.stream());
 };
-// gulp.task('js', function () {
-//   return gulp.src([
-//       'node_modules/slick-carousel/slick/slick.js'
-//     ])
-//     .pipe(concat('libs.min.js'))
-//     .pipe(uglify())
-//     .pipe(gulp.dest('app/js'))
-//     .pipe(browserSync.reload({
-//       stream: true
-//     }))
-// });
+
 
 const stylesBackend = () => {
   return src('./src/scss/**/*.scss')
@@ -94,7 +84,8 @@ const scripts = () => {
         './node_modules/slick-carousel/slick/slick.js',
         './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
         './node_modules/rateyo/src/jquery.rateyo.js',
-        //  './node_modules/animate.css/source/animate.css',
+        './node_modules/ion-rangeslider/js/ion.rangeSlider.js',
+        './node_modules/jquery-form-styler/dist/jquery.formstyler.js',
 
         './src/js/main.js'
 
