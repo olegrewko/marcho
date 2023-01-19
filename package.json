@@ -40,6 +40,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-uglify-es": "^3.0.0",
+    "jquery-form-styler": "^2.0.2",
     "node-w3c-validator": "^2.0.1",
     "rateyo": "^2.3.2",
     "sass": "^1.38.2",
@@ -50,6 +51,7 @@
     "stylelint-scss": "^3.20.1"
   },
   "dependencies": {
-    "@fancyapps/fancybox": "^3.5.7"
+    "@fancyapps/fancybox": "^3.5.7",
+    "ion-rangeslider": "^2.3.1"
   }
 }

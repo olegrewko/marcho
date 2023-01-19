@@ -32,6 +32,22 @@ $(function () {
     readOnly: true
   });
 
+  $(".filter-price__input").ionRangeSlider({
+    onStart: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.from);
+    },
+
+    onChange: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.from);
+    },
+
+
+  });
+
+  $('.celect-style').styler();
+
   function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
