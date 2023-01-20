@@ -515,6 +515,8 @@ text-transform: uppercase;
       text-align: center;
       &.product-item--list{
         min-width: 100%;
+        display: flex;
+        text-align: left;
         &:hover{
           .product-item__link-box{
             transform: translateY(-250%);
@@ -552,8 +554,18 @@ text-transform: uppercase;
             display: none;
           }
         }
+        .product-item__content-box{
+          display: block;
+        }
+        .product-item__wrapper-box{
+          padding: 30px 40px;
+          border: 1px solid #ececec;
+          border-left: none;
+        }
       }
-
+      &__content-box{
+        display: none;
+      }
 
       // text-align: center;
 
