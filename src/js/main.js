@@ -49,8 +49,12 @@ $(function () {
 
   $('.celect-style').styler();
 
-  $('.shop-content__filter-btn').on('click', function(){
+  // $('.shop-content__filter-btn').on('click', function(){
 
+  //   $('.shop-content__filter-btn').toggleClass('.shop-content__filter-btn--active');
+
+  // });
+  $('.shop-content__filter-btn').on('click', function(){
     $('.shop-content__filter-btn').removeClass('.shop-content__filter-btn--active');
     $(this).addClass('shop-content__filter-btn--active');
   });
