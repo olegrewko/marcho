@@ -47,17 +47,7 @@ $(function () {
   });
   $('.celect-style').styler();
 
-<<<<<<< HEAD
-  // $('.shop-content__filter-btn').on('click', function(){
-=======
 
-
-  $('.shop-content__filter-btn').on('click', function(){
->>>>>>> 5580bf2b7f82b1156c720ce878cd0143921abdab
-
-  //   $('.shop-content__filter-btn').toggleClass('.shop-content__filter-btn--active');
-
-  // });
   $('.shop-content__filter-btn').on('click', function(){
     $('.shop-content__filter-btn').removeClass('.shop-content__filter-btn--active');
     $(this).addClass('shop-content__filter-btn--active');
